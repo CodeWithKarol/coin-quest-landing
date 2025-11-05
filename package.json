@@ -1,0 +1,54 @@
+{
+	"name": "coin-quest-landing",
+	"version": "1.0.0",
+	"description": "CoinQuest Landing Page - Play. Save. Win. A gamified financial app landing page with AI-powered features and community engagement.",
+	"main": "index.html",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/CodeWithKarol/coin-quest-landing.git"
+	},
+	"keywords": [
+		"landing-page",
+		"gamification",
+		"fintech",
+		"personal-finance",
+		"ai",
+		"community",
+		"responsive-design",
+		"modern-web"
+	],
+	"author": "CodeWithKarol",
+	"license": "Apache-2.0",
+	"scripts": {
+		"start": "python -m http.server 8000",
+		"server": "npx http-server",
+		"dev": "python -m http.server 8000"
+	},
+	"devDependencies": {},
+	"dependencies": {},
+	"browserslist": [
+		"> 1%",
+		"last 2 versions",
+		"not dead",
+		"not IE 11"
+	],
+	"projectMetadata": {
+		"campaign": "Play. Save. Win.",
+		"brand": "CoinQuest",
+		"tagline": "Finance meets fun—empowering you to win with your money.",
+		"targetAudience": "18-35 year-olds, digitally engaged, achievement-motivated",
+		"channels": [
+			"TikTok",
+			"Twitch",
+			"Discord",
+			"Instagram",
+			"Influencer Tournaments"
+		],
+		"keyMetrics": {
+			"activePlayers": "500K+",
+			"totalSaved": "$2.1B+",
+			"countriesServed": 42,
+			"appRating": 4.9
+		}
+	}
+}

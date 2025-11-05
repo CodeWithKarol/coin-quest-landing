@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<meta
+			name="description"
+			content="CoinQuest - Turn your finances into an epic game. Play. Save. Win. Join thousands earning rewards while gaming the financial system."
+		/>
+		<meta
+			name="theme-color"
+			content="#0A0E27"
+		/>
+		<title>CoinQuest - Play. Save. Win.</title>
+		<link
+			rel="stylesheet"
+			href="styles.css"
+		/>
+		<link
+			rel="preconnect"
+			href="https://fonts.googleapis.com"
+		/>
+		<link
+			rel="preconnect"
+			href="https://fonts.gstatic.com"
+			crossorigin
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Orbitron:wght@400;700;900&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<!-- Navigation -->
+		<nav class="navbar">
+			<div class="container">
+				<div class="nav-brand">
+					<span class="logo-icon">🎮</span>
+					<span class="logo-text">CoinQuest</span>
+				</div>
+				<ul class="nav-links">
+					<li>
+						<a href="#features">Features</a>
+					</li>
+					<li>
+						<a href="#leaderboard">Leaderboard</a>
+					</li>
+					<li>
+						<a href="#community">Community</a>
+					</li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+				<!-- Mobile menu toggle button -->
+				<button
+					class="mobile-menu-toggle"
+					id="mobileMenuToggle"
+					aria-label="Toggle mobile menu"
+				>
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+			</div>
+		</nav>
+
+		<!-- Mobile menu -->
+		<div
+			class="mobile-menu"
+			id="mobileMenu"
+		>
+			<ul class="mobile-nav-links">
+				<li>
+					<a href="#features">Features</a>
+				</li>
+				<li>
+					<a href="#leaderboard">Leaderboard</a>
+				</li>
+				<li>
+					<a href="#community">Community</a>
+				</li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</div>
+		<!-- Hero Section -->
+		<section class="hero">
+			<div class="stars"></div>
+			<div class="container hero-content">
+				<div class="hero-text">
+					<h1 class="hero-title">
+						Ready to Play the
+						<span class="gradient-text"
+							>Money Game?</span
+						>
+					</h1>
+					<p class="hero-subtitle">
+						Level up your savings, conquer your
+						budget, and join a community that wins
+						together.
+					</p>
+					<div class="hero-cta">
+						<button
+							class="btn btn-primary btn-lg"
+							onclick="scrollToContact()"
+						>
+							Join the Challenge
+						</button>
+						<button
+							class="btn btn-secondary btn-lg"
+							onclick="scrollToFeatures()"
+						>
+							Discover Features
+						</button>
+					</div>
+				</div>
+				<div class="hero-visual">
+					<div class="game-window">
+						<div class="game-header">
+							Level 12 Achievement Unlocked! 🏆
+						</div>
+						<div class="game-content">
+							<div class="progress-demo">
+								<div class="progress-label">
+									Savings Challenge
+								</div>
+								<div class="progress-bar">
+									<div
+										class="progress-fill"
+										style="width: 75%"
+									></div>
+								</div>
+								<div class="progress-value">
+									$2,750 / $3,500
+								</div>
+							</div>
+							<div class="achievement-badges">
+								<div class="badge">💰 Rich</div>
+								<div class="badge">
+									🔥 Streak 12
+								</div>
+								<div class="badge">⭐ VIP</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Stats Section -->
+		<section class="stats-section">
+			<div class="container">
+				<div class="stat-card">
+					<div class="stat-number">500K+</div>
+					<div class="stat-label">
+						Players Winning
+					</div>
+				</div>
+				<div class="stat-card">
+					<div class="stat-number">$2.1B+</div>
+					<div class="stat-label">
+						Saved Together
+					</div>
+				</div>
+				<div class="stat-card">
+					<div class="stat-number">42</div>
+					<div class="stat-label">Countries</div>
+				</div>
+				<div class="stat-card">
+					<div class="stat-number">4.9⭐</div>
+					<div class="stat-label">App Rating</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Features Section -->
+		<section
+			class="features"
+			id="features"
+		>
+			<div class="container">
+				<h2 class="section-title">
+					Why You'll Love CoinQuest
+				</h2>
+				<div class="features-grid">
+					<div class="feature-card">
+						<div class="feature-icon">🎮</div>
+						<h3>Gamified Budgeting</h3>
+						<p>
+							Turn budgeting into a game you
+							actually want to play. Earn XP,
+							unlock achievements, and level up
+							your financial skills.
+						</p>
+					</div>
+					<div class="feature-card">
+						<div class="feature-icon">🤖</div>
+						<h3>AI-Powered Automation</h3>
+						<p>
+							Let our cutting-edge AI analyze your
+							spending and automatically optimize
+							your savings strategy. Set it and
+							forget it.
+						</p>
+					</div>
+					<div class="feature-card">
+						<div class="feature-icon">👥</div>
+						<h3>Community Challenges</h3>
+						<p>
+							Compete with friends, join global
+							challenges, and climb the
+							leaderboard. Saving is more fun with
+							your crew.
+						</p>
+					</div>
+					<div class="feature-card">
+						<div class="feature-icon">🏆</div>
+						<h3>Real-Life Rewards</h3>
+						<p>
+							Unlock exclusive perks, cashback
+							bonuses, and cryptocurrency rewards
+							as you achieve your financial
+							milestones.
+						</p>
+					</div>
+					<div class="feature-card">
+						<div class="feature-icon">📊</div>
+						<h3>Live Progress Tracking</h3>
+						<p>
+							Watch your wealth grow in real-time
+							with dynamic dashboards, detailed
+							analytics, and visual progress
+							indicators.
+						</p>
+					</div>
+					<div class="feature-card">
+						<div class="feature-icon">💎</div>
+						<h3>Premium Achievements</h3>
+						<p>
+							Unlock badges, trophies, and
+							exclusive status levels that
+							showcase your financial wins to the
+							community.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Leaderboard Section -->
+		<section
+			class="leaderboard"
+			id="leaderboard"
+		>
+			<div class="container">
+				<h2 class="section-title">
+					Global Leaderboard
+				</h2>
+				<p class="section-subtitle">
+					Where the top savers are dominating the
+					money game
+				</p>
+
+				<div class="leaderboard-container">
+					<table class="leaderboard-table">
+						<thead>
+							<tr>
+								<th>Rank</th>
+								<th>Player</th>
+								<th>Level</th>
+								<th>Total Saved</th>
+								<th>Streak</th>
+								<th>Status</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="rank-1">
+								<td class="rank">🥇 1</td>
+								<td class="player">
+									<span class="avatar">👨</span>
+									Alex Chen
+								</td>
+								<td class="level">
+									<span class="badge-level"
+										>42</span
+									>
+								</td>
+								<td class="saved">$84,300</td>
+								<td class="streak">🔥 89 days</td>
+								<td class="status">
+									🌟 Legendary
+								</td>
+							</tr>
+							<tr class="rank-2">
+								<td class="rank">🥈 2</td>
+								<td class="player">
+									<span class="avatar">👩</span>
+									Sarah Martinez
+								</td>
+								<td class="level">
+									<span class="badge-level"
+										>40</span
+									>
+								</td>
+								<td class="saved">$76,500</td>
+								<td class="streak">🔥 65 days</td>
+								<td class="status">⭐ Elite</td>
+							</tr>
+							<tr class="rank-3">
+								<td class="rank">🥉 3</td>
+								<td class="player">
+									<span class="avatar">🧑</span>
+									Jordan Lee
+								</td>
+								<td class="level">
+									<span class="badge-level"
+										>38</span
+									>
+								</td>
+								<td class="saved">$71,200</td>
+								<td class="streak">🔥 52 days</td>
+								<td class="status">⭐ Elite</td>
+							</tr>
+							<tr class="rank-4">
+								<td class="rank">4</td>
+								<td class="player">
+									<span class="avatar">👨</span>
+									Marcus Williams
+								</td>
+								<td class="level">
+									<span class="badge-level"
+										>37</span
+									>
+								</td>
+								<td class="saved">$68,900</td>
+								<td class="streak">🔥 45 days</td>
+								<td class="status">✨ Pro</td>
+							</tr>
+							<tr class="rank-5">
+								<td class="rank">5</td>
+								<td class="player">
+									<span class="avatar">👩</span>
+									Emma Rodriguez
+								</td>
+								<td class="level">
+									<span class="badge-level"
+										>35</span
+									>
+								</td>
+								<td class="saved">$62,100</td>
+								<td class="streak">🔥 38 days</td>
+								<td class="status">✨ Pro</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<div class="leaderboard-actions">
+					<p class="leaderboard-cta">
+						You could be here! Join the
+						competition and start climbing the
+						ranks.
+					</p>
+					<button
+						class="btn btn-primary"
+						onclick="scrollToContact()"
+					>
+						Start Your Journey
+					</button>
+				</div>
+			</div>
+		</section>
+
+		<!-- Community Section -->
+		<section
+			class="community"
+			id="community"
+		>
+			<div class="container">
+				<h2 class="section-title">
+					Join Our Winning Community
+				</h2>
+
+				<div class="community-grid">
+					<div class="community-card">
+						<div class="community-icon">💬</div>
+						<h3>Discord Server</h3>
+						<p>
+							Real-time chat, finance tips, and
+							daily challenges with 50K+ active
+							members
+						</p>
+						<a
+							href="#"
+							class="community-link"
+							>Join Discord →</a
+						>
+					</div>
+					<div class="community-card">
+						<div class="community-icon">📱</div>
+						<h3>TikTok Challenges</h3>
+						<p>
+							Viral money-saving challenges and
+							success stories from the community
+						</p>
+						<a
+							href="#"
+							class="community-link"
+							>Follow @CoinQuest →</a
+						>
+					</div>
+					<div class="community-card">
+						<div class="community-icon">🎮</div>
+						<h3>Twitch Streams</h3>
+						<p>
+							Live finance hacks, strategy guides,
+							and community tournaments
+						</p>
+						<a
+							href="#"
+							class="community-link"
+							>Watch Live →</a
+						>
+					</div>
+					<div class="community-card">
+						<div class="community-icon">🎯</div>
+						<h3>Influencer Tournaments</h3>
+						<p>
+							Compete with top creators for
+							exclusive prizes and recognition
+						</p>
+						<a
+							href="#"
+							class="community-link"
+							>Learn More →</a
+						>
+					</div>
+				</div>
+
+				<div class="testimonials">
+					<h3 class="testimonials-title">
+						What Players Are Saying
+					</h3>
+					<div class="testimonials-grid">
+						<div class="testimonial-card">
+							<div class="testimonial-stars">
+								⭐⭐⭐⭐⭐
+							</div>
+							<p class="testimonial-text">
+								"CoinQuest made saving actually
+								fun! I've saved more in 3 months
+								than I did in the entire year
+								before."
+							</p>
+							<div class="testimonial-author">
+								— Jennifer K., Los Angeles
+							</div>
+						</div>
+						<div class="testimonial-card">
+							<div class="testimonial-stars">
+								⭐⭐⭐⭐⭐
+							</div>
+							<p class="testimonial-text">
+								"The AI features are incredible.
+								It automatically optimized my
+								spending without me even thinking
+								about it."
+							</p>
+							<div class="testimonial-author">
+								— David T., Toronto
+							</div>
+						</div>
+						<div class="testimonial-card">
+							<div class="testimonial-stars">
+								⭐⭐⭐⭐⭐
+							</div>
+							<p class="testimonial-text">
+								"The community aspect keeps me
+								motivated. Competing with friends
+								makes financial goals actually
+								achievable."
+							</p>
+							<div class="testimonial-author">
+								— Lisa M., Singapore
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Contact/CTA Section -->
+		<section
+			class="cta-section"
+			id="contact"
+		>
+			<div class="container">
+				<div class="cta-content">
+					<h2>Ready to Start Winning?</h2>
+					<p>
+						Download CoinQuest today and join
+						500K+ players already crushing their
+						financial goals.
+					</p>
+
+					<div class="download-buttons">
+						<a
+							href="#"
+							class="btn btn-primary btn-lg"
+						>
+							<span class="btn-icon">📱</span>
+							Download iOS
+						</a>
+						<a
+							href="#"
+							class="btn btn-primary btn-lg"
+						>
+							<span class="btn-icon">🤖</span>
+							Download Android
+						</a>
+					</div>
+
+					<div class="contact-info">
+						<h3>Questions? We're Here to Help</h3>
+						<div class="contact-methods">
+							<div class="contact-method">
+								<span class="contact-icon"
+									>💬</span
+								>
+								<div>
+									<strong>Live Chat</strong>
+									<p>Available 24/7 in the app</p>
+								</div>
+							</div>
+							<div class="contact-method">
+								<span class="contact-icon"
+									>📧</span
+								>
+								<div>
+									<strong>Email</strong>
+									<p>
+										<a
+											href="mailto:support@coinquest.io"
+											>support@coinquest.io</a
+										>
+									</p>
+								</div>
+							</div>
+							<div class="contact-method">
+								<span class="contact-icon"
+									>🌐</span
+								>
+								<div>
+									<strong>Community Forum</strong>
+									<p>
+										<a href="#"
+											>Visit our forum</a
+										>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Footer -->
+		<footer class="footer">
+			<div class="container">
+				<div class="footer-grid">
+					<div class="footer-section">
+						<h4>CoinQuest</h4>
+						<p>
+							Turn your finances into an epic
+							game. Play. Save. Win.
+						</p>
+					</div>
+					<div class="footer-section">
+						<h4>Product</h4>
+						<ul>
+							<li><a href="#">Features</a></li>
+							<li><a href="#">Pricing</a></li>
+							<li><a href="#">Security</a></li>
+						</ul>
+					</div>
+					<div class="footer-section">
+						<h4>Community</h4>
+						<ul>
+							<li><a href="#">Discord</a></li>
+							<li><a href="#">TikTok</a></li>
+							<li><a href="#">Twitch</a></li>
+						</ul>
+					</div>
+					<div class="footer-section">
+						<h4>Legal</h4>
+						<ul>
+							<li><a href="#">Privacy</a></li>
+							<li><a href="#">Terms</a></li>
+							<li><a href="#">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer-bottom">
+					<p>
+						&copy; 2025 CoinQuest. All rights
+						reserved. Play. Save. Win.
+					</p>
+				</div>
+			</div>
+		</footer>
+
+		<script src="script.js"></script>
+	</body>
+</html>
