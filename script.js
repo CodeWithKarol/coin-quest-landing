@@ -127,31 +127,6 @@ const observer = new IntersectionObserver(
 	observerOptions
 );
 
-// Observe all feature cards and other elements
-document.addEventListener(
-	"DOMContentLoaded",
-	function () {
-		const observableElements =
-			document.querySelectorAll(
-				".feature-card, .community-card, .testimonial-card, .stat-card"
-			);
-
-		observableElements.forEach((element) => {
-			observer.observe(element);
-		});
-
-		// Add animation delays
-		document
-			.querySelectorAll(".feature-card")
-			.forEach((card, index) => {
-				card.style.setProperty(
-					"--delay",
-					`${index * 0.1}s`
-				);
-			});
-	}
-);
-
 // ============================================
 // NAVBAR SCROLL EFFECT
 // ============================================
@@ -527,3 +502,43 @@ style.textContent = `
 `;
 
 document.head.appendChild(style);
+
+// ============================================
+// SCROLL ANIMATIONS
+// ============================================
+
+document.addEventListener(
+	"DOMContentLoaded",
+	function () {
+		const observerOptions = {
+			threshold: 0.15,
+			rootMargin: "0px 0px -50px 0px",
+		};
+
+		const animatedElements = new Set();
+
+		const observer = new IntersectionObserver(
+			function (entries) {
+				entries.forEach((entry) => {
+					if (
+						entry.isIntersecting &&
+						!animatedElements.has(entry.target)
+					) {
+						animatedElements.add(entry.target);
+						entry.target.classList.add("animate");
+						observer.unobserve(entry.target);
+					}
+				});
+			},
+			observerOptions
+		);
+
+		// Observe all scroll animation elements
+		const elements = document.querySelectorAll(
+			".scroll-fade-in, .scroll-slide-up"
+		);
+		elements.forEach((element) => {
+			observer.observe(element);
+		});
+	}
+);
