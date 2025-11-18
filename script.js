@@ -127,31 +127,6 @@ const observer = new IntersectionObserver(
 	observerOptions
 );
 
-// Observe all feature cards and other elements
-document.addEventListener(
-	"DOMContentLoaded",
-	function () {
-		const observableElements =
-			document.querySelectorAll(
-				".feature-card, .community-card, .testimonial-card, .stat-card"
-			);
-
-		observableElements.forEach((element) => {
-			observer.observe(element);
-		});
-
-		// Add animation delays
-		document
-			.querySelectorAll(".feature-card")
-			.forEach((card, index) => {
-				card.style.setProperty(
-					"--delay",
-					`${index * 0.1}s`
-				);
-			});
-	}
-);
-
 // ============================================
 // NAVBAR SCROLL EFFECT
 // ============================================
