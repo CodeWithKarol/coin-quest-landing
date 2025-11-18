@@ -931,7 +931,6 @@ h6 {
 	animation: scrollFadeIn 1.4s
 		cubic-bezier(0.4, 0, 0.2, 1) forwards;
 }
-
 .community.scroll-fade-in.animate {
 	animation: scrollFadeIn 2.2s
 		cubic-bezier(0.4, 0, 0.2, 1) forwards !important;
@@ -1700,18 +1699,6 @@ h6 {
 		cubic-bezier(0.34, 1.56, 0.64, 1);
 	overflow: hidden;
 	height: 100%;
-}
-
-.community-card:nth-child(1) {
-}
-
-.community-card:nth-child(2) {
-}
-
-.community-card:nth-child(3) {
-}
-
-.community-card:nth-child(4) {
 }
 
 .community-card-glow {
