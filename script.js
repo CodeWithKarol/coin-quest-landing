@@ -527,3 +527,43 @@ style.textContent = `
 `;
 
 document.head.appendChild(style);
+
+// ============================================
+// SCROLL ANIMATIONS
+// ============================================
+
+document.addEventListener(
+	"DOMContentLoaded",
+	function () {
+		const observerOptions = {
+			threshold: 0.15,
+			rootMargin: "0px 0px -50px 0px",
+		};
+
+		const animatedElements = new Set();
+
+		const observer = new IntersectionObserver(
+			function (entries) {
+				entries.forEach((entry) => {
+					if (
+						entry.isIntersecting &&
+						!animatedElements.has(entry.target)
+					) {
+						animatedElements.add(entry.target);
+						entry.target.classList.add("animate");
+						observer.unobserve(entry.target);
+					}
+				});
+			},
+			observerOptions
+		);
+
+		// Observe all scroll animation elements
+		const elements = document.querySelectorAll(
+			".scroll-fade-in, .scroll-slide-up"
+		);
+		elements.forEach((element) => {
+			observer.observe(element);
+		});
+	}
+);

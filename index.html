@@ -36,23 +36,48 @@
 	<body>
 		<!-- Navigation -->
 		<nav class="navbar">
-			<div class="container">
+			<div class="container nav-container">
 				<div class="nav-brand">
 					<span class="logo-icon">🎮</span>
 					<span class="logo-text">CoinQuest</span>
 				</div>
 				<ul class="nav-links">
 					<li>
-						<a href="#features">Features</a>
+						<a
+							href="#features"
+							class="nav-link"
+							>Features</a
+						>
 					</li>
 					<li>
-						<a href="#leaderboard">Leaderboard</a>
+						<a
+							href="#leaderboard"
+							class="nav-link"
+							>Leaderboard</a
+						>
 					</li>
 					<li>
-						<a href="#community">Community</a>
+						<a
+							href="#community"
+							class="nav-link"
+							>Community</a
+						>
 					</li>
-					<li><a href="#contact">Contact</a></li>
+					<li>
+						<a
+							href="#contact"
+							class="nav-link"
+							>Contact</a
+						>
+					</li>
 				</ul>
+				<div class="nav-actions">
+					<button
+						class="btn btn-secondary btn-sm"
+					>
+						Sign In
+					</button>
+				</div>
 				<!-- Mobile menu toggle button -->
 				<button
 					class="mobile-menu-toggle"
@@ -73,22 +98,52 @@
 		>
 			<ul class="mobile-nav-links">
 				<li>
-					<a href="#features">Features</a>
+					<a
+						href="#features"
+						class="nav-link"
+						>Features</a
+					>
 				</li>
 				<li>
-					<a href="#leaderboard">Leaderboard</a>
+					<a
+						href="#leaderboard"
+						class="nav-link"
+						>Leaderboard</a
+					>
 				</li>
 				<li>
-					<a href="#community">Community</a>
+					<a
+						href="#community"
+						class="nav-link"
+						>Community</a
+					>
 				</li>
-				<li><a href="#contact">Contact</a></li>
+				<li>
+					<a
+						href="#contact"
+						class="nav-link"
+						>Contact</a
+					>
+				</li>
 			</ul>
+			<div class="mobile-nav-actions">
+				<button class="btn btn-secondary btn-sm">
+					Sign In
+				</button>
+			</div>
 		</div>
 		<!-- Hero Section -->
-		<section class="hero">
-			<div class="stars"></div>
+		<section class="hero scroll-fade-in">
+			<div class="hero-background">
+				<div class="stars"></div>
+				<div class="gradient-orb orb-1"></div>
+				<div class="gradient-orb orb-2"></div>
+			</div>
 			<div class="container hero-content">
 				<div class="hero-text">
+					<span class="hero-badge"
+						>🚀 Modern Finance Gaming</span
+					>
 					<h1 class="hero-title">
 						Ready to Play the
 						<span class="gradient-text"
@@ -98,8 +153,35 @@
 					<p class="hero-subtitle">
 						Level up your savings, conquer your
 						budget, and join a community that wins
-						together.
+						together. Experience gamified finance
+						like never before.
 					</p>
+					<div class="hero-stats">
+						<div class="stat-item">
+							<span class="stat-number"
+								>50K+</span
+							>
+							<span class="stat-label"
+								>Active Players</span
+							>
+						</div>
+						<div class="stat-item">
+							<span class="stat-number"
+								>$2M+</span
+							>
+							<span class="stat-label"
+								>Saved Together</span
+							>
+						</div>
+						<div class="stat-item">
+							<span class="stat-number"
+								>4.9★</span
+							>
+							<span class="stat-label"
+								>App Rating</span
+							>
+						</div>
+					</div>
 					<div class="hero-cta">
 						<button
 							class="btn btn-primary btn-lg"
@@ -149,100 +231,167 @@
 		</section>
 
 		<!-- Stats Section -->
-		<section class="stats-section">
+		<section
+			class="stats-section scroll-slide-up"
+		>
 			<div class="container">
-				<div class="stat-card">
-					<div class="stat-number">500K+</div>
-					<div class="stat-label">
-						Players Winning
+				<div class="stats-header">
+					<h2 class="stats-title">
+						Trusted by Millions
+					</h2>
+					<p class="stats-subtitle">
+						Join a global community of smart
+						savers and gamers
+					</p>
+				</div>
+				<div class="stats-grid">
+					<div class="stat-card">
+						<div class="stat-icon">👥</div>
+						<div class="stat-number">500K+</div>
+						<div class="stat-label">
+							Active Players
+						</div>
+						<div class="stat-description">
+							Growing daily
+						</div>
 					</div>
-				</div>
-				<div class="stat-card">
-					<div class="stat-number">$2.1B+</div>
-					<div class="stat-label">
-						Saved Together
+					<div class="stat-card">
+						<div class="stat-icon">💰</div>
+						<div class="stat-number">$2.1B+</div>
+						<div class="stat-label">
+							Saved Together
+						</div>
+						<div class="stat-description">
+							Combined savings
+						</div>
 					</div>
-				</div>
-				<div class="stat-card">
-					<div class="stat-number">42</div>
-					<div class="stat-label">Countries</div>
-				</div>
-				<div class="stat-card">
-					<div class="stat-number">4.9⭐</div>
-					<div class="stat-label">App Rating</div>
+					<div class="stat-card">
+						<div class="stat-icon">🌍</div>
+						<div class="stat-number">42</div>
+						<div class="stat-label">
+							Countries
+						</div>
+						<div class="stat-description">
+							Global reach
+						</div>
+					</div>
+					<div class="stat-card">
+						<div class="stat-icon">⭐</div>
+						<div class="stat-number">4.9</div>
+						<div class="stat-label">
+							App Rating
+						</div>
+						<div class="stat-description">
+							User-loved
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
 
 		<!-- Features Section -->
 		<section
-			class="features"
+			class="features scroll-slide-up"
 			id="features"
 		>
+			<div class="features-background">
+				<div class="features-gradient"></div>
+			</div>
 			<div class="container">
-				<h2 class="section-title">
-					Why You'll Love CoinQuest
-				</h2>
+				<div class="features-header">
+					<h2 class="features-title">
+						Why You'll Love CoinQuest
+					</h2>
+					<p class="features-subtitle">
+						Experience gamified finance with
+						cutting-edge features designed for
+						modern savers
+					</p>
+				</div>
 				<div class="features-grid">
 					<div class="feature-card">
+						<div class="feature-card-glow"></div>
 						<div class="feature-icon">🎮</div>
-						<h3>Gamified Budgeting</h3>
-						<p>
+						<h3 class="feature-title">
+							Gamified Budgeting
+						</h3>
+						<p class="feature-description">
 							Turn budgeting into a game you
 							actually want to play. Earn XP,
 							unlock achievements, and level up
 							your financial skills.
 						</p>
+						<div class="feature-arrow">→</div>
 					</div>
 					<div class="feature-card">
+						<div class="feature-card-glow"></div>
 						<div class="feature-icon">🤖</div>
-						<h3>AI-Powered Automation</h3>
-						<p>
+						<h3 class="feature-title">
+							AI-Powered Automation
+						</h3>
+						<p class="feature-description">
 							Let our cutting-edge AI analyze your
 							spending and automatically optimize
 							your savings strategy. Set it and
 							forget it.
 						</p>
+						<div class="feature-arrow">→</div>
 					</div>
 					<div class="feature-card">
+						<div class="feature-card-glow"></div>
 						<div class="feature-icon">👥</div>
-						<h3>Community Challenges</h3>
-						<p>
+						<h3 class="feature-title">
+							Community Challenges
+						</h3>
+						<p class="feature-description">
 							Compete with friends, join global
 							challenges, and climb the
 							leaderboard. Saving is more fun with
 							your crew.
 						</p>
+						<div class="feature-arrow">→</div>
 					</div>
 					<div class="feature-card">
+						<div class="feature-card-glow"></div>
 						<div class="feature-icon">🏆</div>
-						<h3>Real-Life Rewards</h3>
-						<p>
+						<h3 class="feature-title">
+							Real-Life Rewards
+						</h3>
+						<p class="feature-description">
 							Unlock exclusive perks, cashback
 							bonuses, and cryptocurrency rewards
 							as you achieve your financial
 							milestones.
 						</p>
+						<div class="feature-arrow">→</div>
 					</div>
 					<div class="feature-card">
+						<div class="feature-card-glow"></div>
 						<div class="feature-icon">📊</div>
-						<h3>Live Progress Tracking</h3>
-						<p>
+						<h3 class="feature-title">
+							Live Progress Tracking
+						</h3>
+						<p class="feature-description">
 							Watch your wealth grow in real-time
 							with dynamic dashboards, detailed
 							analytics, and visual progress
 							indicators.
 						</p>
+						<div class="feature-arrow">→</div>
 					</div>
 					<div class="feature-card">
+						<div class="feature-card-glow"></div>
 						<div class="feature-icon">💎</div>
-						<h3>Premium Achievements</h3>
-						<p>
+						<h3 class="feature-title">
+							Premium Achievements
+						</h3>
+						<p class="feature-description">
 							Unlock badges, trophies, and
 							exclusive status levels that
 							showcase your financial wins to the
 							community.
 						</p>
+						<div class="feature-arrow">→</div>
 					</div>
 				</div>
 			</div>
@@ -250,147 +399,364 @@
 
 		<!-- Leaderboard Section -->
 		<section
-			class="leaderboard"
+			class="leaderboard scroll-slide-up"
 			id="leaderboard"
 		>
+			<div class="leaderboard-background">
+				<div class="leaderboard-gradient"></div>
+			</div>
 			<div class="container">
-				<h2 class="section-title">
-					Global Leaderboard
-				</h2>
-				<p class="section-subtitle">
-					Where the top savers are dominating the
-					money game
-				</p>
-
-				<div class="leaderboard-container">
-					<table class="leaderboard-table">
-						<thead>
-							<tr>
-								<th>Rank</th>
-								<th>Player</th>
-								<th>Level</th>
-								<th>Total Saved</th>
-								<th>Streak</th>
-								<th>Status</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr class="rank-1">
-								<td class="rank">🥇 1</td>
-								<td class="player">
-									<span class="avatar">👨</span>
-									Alex Chen
-								</td>
-								<td class="level">
-									<span class="badge-level"
-										>42</span
-									>
-								</td>
-								<td class="saved">$84,300</td>
-								<td class="streak">🔥 89 days</td>
-								<td class="status">
-									🌟 Legendary
-								</td>
-							</tr>
-							<tr class="rank-2">
-								<td class="rank">🥈 2</td>
-								<td class="player">
-									<span class="avatar">👩</span>
-									Sarah Martinez
-								</td>
-								<td class="level">
-									<span class="badge-level"
-										>40</span
-									>
-								</td>
-								<td class="saved">$76,500</td>
-								<td class="streak">🔥 65 days</td>
-								<td class="status">⭐ Elite</td>
-							</tr>
-							<tr class="rank-3">
-								<td class="rank">🥉 3</td>
-								<td class="player">
-									<span class="avatar">🧑</span>
-									Jordan Lee
-								</td>
-								<td class="level">
-									<span class="badge-level"
-										>38</span
-									>
-								</td>
-								<td class="saved">$71,200</td>
-								<td class="streak">🔥 52 days</td>
-								<td class="status">⭐ Elite</td>
-							</tr>
-							<tr class="rank-4">
-								<td class="rank">4</td>
-								<td class="player">
-									<span class="avatar">👨</span>
-									Marcus Williams
-								</td>
-								<td class="level">
-									<span class="badge-level"
-										>37</span
-									>
-								</td>
-								<td class="saved">$68,900</td>
-								<td class="streak">🔥 45 days</td>
-								<td class="status">✨ Pro</td>
-							</tr>
-							<tr class="rank-5">
-								<td class="rank">5</td>
-								<td class="player">
-									<span class="avatar">👩</span>
-									Emma Rodriguez
-								</td>
-								<td class="level">
-									<span class="badge-level"
-										>35</span
-									>
-								</td>
-								<td class="saved">$62,100</td>
-								<td class="streak">🔥 38 days</td>
-								<td class="status">✨ Pro</td>
-							</tr>
-						</tbody>
-					</table>
+				<div class="leaderboard-header">
+					<h2 class="leaderboard-title">
+						Global Leaderboard
+					</h2>
+					<p class="leaderboard-subtitle">
+						Where the top savers are dominating
+						the money game
+					</p>
 				</div>
 
-				<div class="leaderboard-actions">
-					<p class="leaderboard-cta">
-						You could be here! Join the
-						competition and start climbing the
-						ranks.
-					</p>
-					<button
-						class="btn btn-primary"
-						onclick="scrollToContact()"
-					>
-						Start Your Journey
-					</button>
+				<div class="leaderboard-container">
+					<div class="leaderboard-cards">
+						<div
+							class="leaderboard-card rank-1-card"
+						>
+							<div
+								class="leaderboard-card-glow"
+							></div>
+							<div class="leaderboard-card-rank">
+								<div class="rank-badge">🥇</div>
+								<div class="rank-number">1st</div>
+							</div>
+							<div
+								class="leaderboard-card-content"
+							>
+								<div class="player-info">
+									<div class="player-avatar">
+										👨
+									</div>
+									<div class="player-details">
+										<div class="player-name">
+											Alex Chen
+										</div>
+										<div class="player-status">
+											🌟 Legendary
+										</div>
+									</div>
+								</div>
+								<div class="leaderboard-stats">
+									<div class="stat-item">
+										<div class="stat-label">
+											Level
+										</div>
+										<div class="stat-value">
+											42
+										</div>
+									</div>
+									<div class="stat-item">
+										<div class="stat-label">
+											Saved
+										</div>
+										<div class="stat-value">
+											$84,300
+										</div>
+									</div>
+									<div class="stat-item">
+										<div class="stat-label">
+											Streak
+										</div>
+										<div class="stat-value">
+											🔥 89d
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div
+							class="leaderboard-card rank-2-card"
+						>
+							<div
+								class="leaderboard-card-glow"
+							></div>
+							<div class="leaderboard-card-rank">
+								<div class="rank-badge">🥈</div>
+								<div class="rank-number">2nd</div>
+							</div>
+							<div
+								class="leaderboard-card-content"
+							>
+								<div class="player-info">
+									<div class="player-avatar">
+										👩
+									</div>
+									<div class="player-details">
+										<div class="player-name">
+											Sarah Martinez
+										</div>
+										<div class="player-status">
+											⭐ Elite
+										</div>
+									</div>
+								</div>
+								<div class="leaderboard-stats">
+									<div class="stat-item">
+										<div class="stat-label">
+											Level
+										</div>
+										<div class="stat-value">
+											40
+										</div>
+									</div>
+									<div class="stat-item">
+										<div class="stat-label">
+											Saved
+										</div>
+										<div class="stat-value">
+											$76,500
+										</div>
+									</div>
+									<div class="stat-item">
+										<div class="stat-label">
+											Streak
+										</div>
+										<div class="stat-value">
+											🔥 65d
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div
+							class="leaderboard-card rank-3-card"
+						>
+							<div
+								class="leaderboard-card-glow"
+							></div>
+							<div class="leaderboard-card-rank">
+								<div class="rank-badge">🥉</div>
+								<div class="rank-number">3rd</div>
+							</div>
+							<div
+								class="leaderboard-card-content"
+							>
+								<div class="player-info">
+									<div class="player-avatar">
+										🧑
+									</div>
+									<div class="player-details">
+										<div class="player-name">
+											Jordan Lee
+										</div>
+										<div class="player-status">
+											⭐ Elite
+										</div>
+									</div>
+								</div>
+								<div class="leaderboard-stats">
+									<div class="stat-item">
+										<div class="stat-label">
+											Level
+										</div>
+										<div class="stat-value">
+											38
+										</div>
+									</div>
+									<div class="stat-item">
+										<div class="stat-label">
+											Saved
+										</div>
+										<div class="stat-value">
+											$71,200
+										</div>
+									</div>
+									<div class="stat-item">
+										<div class="stat-label">
+											Streak
+										</div>
+										<div class="stat-value">
+											🔥 52d
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div
+							class="leaderboard-card rank-4-card"
+						>
+							<div
+								class="leaderboard-card-glow"
+							></div>
+							<div class="leaderboard-card-rank">
+								<div class="rank-badge">4</div>
+								<div class="rank-number">4th</div>
+							</div>
+							<div
+								class="leaderboard-card-content"
+							>
+								<div class="player-info">
+									<div class="player-avatar">
+										👨
+									</div>
+									<div class="player-details">
+										<div class="player-name">
+											Marcus Williams
+										</div>
+										<div class="player-status">
+											✨ Pro
+										</div>
+									</div>
+								</div>
+								<div class="leaderboard-stats">
+									<div class="stat-item">
+										<div class="stat-label">
+											Level
+										</div>
+										<div class="stat-value">
+											37
+										</div>
+									</div>
+									<div class="stat-item">
+										<div class="stat-label">
+											Saved
+										</div>
+										<div class="stat-value">
+											$68,900
+										</div>
+									</div>
+									<div class="stat-item">
+										<div class="stat-label">
+											Streak
+										</div>
+										<div class="stat-value">
+											🔥 45d
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div
+							class="leaderboard-card rank-5-card"
+						>
+							<div
+								class="leaderboard-card-glow"
+							></div>
+							<div class="leaderboard-card-rank">
+								<div class="rank-badge">5</div>
+								<div class="rank-number">5th</div>
+							</div>
+							<div
+								class="leaderboard-card-content"
+							>
+								<div class="player-info">
+									<div class="player-avatar">
+										👩
+									</div>
+									<div class="player-details">
+										<div class="player-name">
+											Emma Rodriguez
+										</div>
+										<div class="player-status">
+											✨ Pro
+										</div>
+									</div>
+								</div>
+								<div class="leaderboard-stats">
+									<div class="stat-item">
+										<div class="stat-label">
+											Level
+										</div>
+										<div class="stat-value">
+											35
+										</div>
+									</div>
+									<div class="stat-item">
+										<div class="stat-label">
+											Saved
+										</div>
+										<div class="stat-value">
+											$62,100
+										</div>
+									</div>
+									<div class="stat-item">
+										<div class="stat-label">
+											Streak
+										</div>
+										<div class="stat-value">
+											🔥 38d
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="leaderboard-cta-section">
+					<div class="leaderboard-cta-content">
+						<h3 class="leaderboard-cta-title">
+							Ready to Climb the Ranks?
+						</h3>
+						<p class="leaderboard-cta-text">
+							Join thousands of savers competing
+							daily. You could be on this
+							leaderboard!
+						</p>
+						<button
+							class="btn btn-primary"
+							onclick="scrollToContact()"
+						>
+							Start Your Journey
+						</button>
+					</div>
 				</div>
 			</div>
 		</section>
 
 		<!-- Community Section -->
 		<section
-			class="community"
+			class="community scroll-fade-in"
 			id="community"
 		>
+			<div class="community-background">
+				<div class="community-gradient"></div>
+			</div>
 			<div class="container">
-				<h2 class="section-title">
-					Join Our Winning Community
-				</h2>
+				<div class="community-header">
+					<h2 class="community-title">
+						Join Our Winning Community
+					</h2>
+					<p class="community-subtitle">
+						Connect with thousands of savers,
+						share strategies, and win together
+					</p>
+				</div>
 
 				<div class="community-grid">
 					<div class="community-card">
+						<div
+							class="community-card-glow"
+						></div>
 						<div class="community-icon">💬</div>
-						<h3>Discord Server</h3>
-						<p>
+						<h3 class="community-card-title">
+							Discord Server
+						</h3>
+						<p class="community-card-description">
 							Real-time chat, finance tips, and
 							daily challenges with 50K+ active
 							members
 						</p>
+						<div class="community-stats">
+							<div class="stat-badge">
+								50K+ Members
+							</div>
+							<div class="stat-badge">
+								24/7 Active
+							</div>
+						</div>
 						<a
 							href="#"
 							class="community-link"
@@ -398,12 +764,25 @@
 						>
 					</div>
 					<div class="community-card">
+						<div
+							class="community-card-glow"
+						></div>
 						<div class="community-icon">📱</div>
-						<h3>TikTok Challenges</h3>
-						<p>
+						<h3 class="community-card-title">
+							TikTok Challenges
+						</h3>
+						<p class="community-card-description">
 							Viral money-saving challenges and
 							success stories from the community
 						</p>
+						<div class="community-stats">
+							<div class="stat-badge">
+								10M+ Views
+							</div>
+							<div class="stat-badge">
+								Trending
+							</div>
+						</div>
 						<a
 							href="#"
 							class="community-link"
@@ -411,12 +790,25 @@
 						>
 					</div>
 					<div class="community-card">
+						<div
+							class="community-card-glow"
+						></div>
 						<div class="community-icon">🎮</div>
-						<h3>Twitch Streams</h3>
-						<p>
+						<h3 class="community-card-title">
+							Twitch Streams
+						</h3>
+						<p class="community-card-description">
 							Live finance hacks, strategy guides,
 							and community tournaments
 						</p>
+						<div class="community-stats">
+							<div class="stat-badge">
+								Weekly Streams
+							</div>
+							<div class="stat-badge">
+								Free Prizes
+							</div>
+						</div>
 						<a
 							href="#"
 							class="community-link"
@@ -424,12 +816,25 @@
 						>
 					</div>
 					<div class="community-card">
+						<div
+							class="community-card-glow"
+						></div>
 						<div class="community-icon">🎯</div>
-						<h3>Influencer Tournaments</h3>
-						<p>
+						<h3 class="community-card-title">
+							Influencer Tournaments
+						</h3>
+						<p class="community-card-description">
 							Compete with top creators for
 							exclusive prizes and recognition
 						</p>
+						<div class="community-stats">
+							<div class="stat-badge">
+								$100K Prize Pool
+							</div>
+							<div class="stat-badge">
+								Monthly
+							</div>
+						</div>
 						<a
 							href="#"
 							class="community-link"
@@ -492,13 +897,20 @@
 
 		<!-- Contact/CTA Section -->
 		<section
-			class="cta-section"
+			class="cta-section scroll-slide-up"
 			id="contact"
 		>
+			<div class="cta-background">
+				<div class="cta-gradient"></div>
+				<div class="cta-orb-1"></div>
+				<div class="cta-orb-2"></div>
+			</div>
 			<div class="container">
 				<div class="cta-content">
-					<h2>Ready to Start Winning?</h2>
-					<p>
+					<h2 class="cta-title">
+						Ready to Start Winning?
+					</h2>
+					<p class="cta-subtitle">
 						Download CoinQuest today and join
 						500K+ players already crushing their
 						financial goals.
@@ -507,14 +919,14 @@
 					<div class="download-buttons">
 						<a
 							href="#"
-							class="btn btn-primary btn-lg"
+							class="btn btn-primary btn-lg download-btn"
 						>
 							<span class="btn-icon">📱</span>
 							Download iOS
 						</a>
 						<a
 							href="#"
-							class="btn btn-primary btn-lg"
+							class="btn btn-primary btn-lg download-btn"
 						>
 							<span class="btn-icon">🤖</span>
 							Download Android
@@ -522,22 +934,32 @@
 					</div>
 
 					<div class="contact-info">
-						<h3>Questions? We're Here to Help</h3>
+						<h3 class="contact-info-title">
+							Questions? We're Here to Help
+						</h3>
 						<div class="contact-methods">
 							<div class="contact-method">
-								<span class="contact-icon"
-									>💬</span
+								<div class="contact-icon-wrapper">
+									<span class="contact-icon"
+										>💬</span
+									>
+								</div>
+								<div
+									class="contact-method-content"
 								>
-								<div>
 									<strong>Live Chat</strong>
 									<p>Available 24/7 in the app</p>
 								</div>
 							</div>
 							<div class="contact-method">
-								<span class="contact-icon"
-									>📧</span
+								<div class="contact-icon-wrapper">
+									<span class="contact-icon"
+										>📧</span
+									>
+								</div>
+								<div
+									class="contact-method-content"
 								>
-								<div>
 									<strong>Email</strong>
 									<p>
 										<a
@@ -548,10 +970,14 @@
 								</div>
 							</div>
 							<div class="contact-method">
-								<span class="contact-icon"
-									>🌐</span
+								<div class="contact-icon-wrapper">
+									<span class="contact-icon"
+										>🌐</span
+									>
+								</div>
+								<div
+									class="contact-method-content"
 								>
-								<div>
 									<strong>Community Forum</strong>
 									<p>
 										<a href="#"
@@ -565,48 +991,154 @@
 				</div>
 			</div>
 		</section>
-
 		<!-- Footer -->
 		<footer class="footer">
+			<div class="footer-background">
+				<div class="footer-gradient"></div>
+				<div class="footer-orb-1"></div>
+				<div class="footer-orb-2"></div>
+			</div>
 			<div class="container">
-				<div class="footer-grid">
-					<div class="footer-section">
-						<h4>CoinQuest</h4>
-						<p>
-							Turn your finances into an epic
-							game. Play. Save. Win.
+				<div class="footer-content">
+					<div class="footer-top">
+						<div class="footer-brand">
+							<div class="footer-logo">
+								<span class="logo-icon">🎮</span>
+								<span class="logo-text"
+									>CoinQuest</span
+								>
+							</div>
+							<p class="footer-tagline">
+								Turn your finances into an epic
+								game. Play. Save. Win.
+							</p>
+							<div class="footer-socials">
+								<a
+									href="#"
+									class="social-link"
+									title="Discord"
+								>
+									<svg
+										width="20"
+										height="20"
+										viewBox="0 0 24 24"
+										fill="currentColor"
+									>
+										<path
+											d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.211.375-.445.864-.607 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.056 19.9 19.9 0 0 0 5.993 3.03.08.08 0 0 0 .087-.027c.461-.63.872-1.295 1.226-1.994a.076.076 0 0 0-.042-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.294.075.075 0 0 1 .078-.01c3.928 1.793 8.18 1.793 12.062 0a.075.075 0 0 1 .079.009c.12.098.246.198.373.295a.077.077 0 0 1-.007.127 12.299 12.299 0 0 1-1.873.892.076.076 0 0 0-.041.107c.36.698.77 1.364 1.225 1.994a.076.076 0 0 0 .087.028 19.86 19.86 0 0 0 6.002-3.030.077.077 0 0 0 .032-.054c.5-4.718-.838-8.812-3.543-12.662a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-.965-2.157-2.156 0-1.193.93-2.157 2.157-2.157 1.226 0 2.157.964 2.157 2.157 0 1.19-.93 2.155-2.157 2.155zm7.975 0c-1.183 0-2.157-.965-2.157-2.156 0-1.193.93-2.157 2.157-2.157 1.226 0 2.157.964 2.157 2.157 0 1.19-.931 2.155-2.157 2.155z"
+										/>
+									</svg>
+								</a>
+								<a
+									href="#"
+									class="social-link"
+									title="Twitter"
+								>
+									<svg
+										width="20"
+										height="20"
+										viewBox="0 0 24 24"
+										fill="currentColor"
+									>
+										<path
+											d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2s9 5 20 5a9.5 9.5 0 00-9-5.5c4.75 2.25 7-7 7-7a10.6 10.6 0 01-9-5.5"
+										/>
+									</svg>
+								</a>
+								<a
+									href="#"
+									class="social-link"
+									title="TikTok"
+								>
+									<svg
+										width="20"
+										height="20"
+										viewBox="0 0 24 24"
+										fill="currentColor"
+									>
+										<path
+											d="M19 3a7 7 0 01-7 7v4a4 4 0 01-4-4V3M9 12a4 4 0 104 4v-4a4 4 0 00-4-4"
+										/>
+									</svg>
+								</a>
+								<a
+									href="#"
+									class="social-link"
+									title="Twitch"
+								>
+									<svg
+										width="20"
+										height="20"
+										viewBox="0 0 24 24"
+										fill="currentColor"
+									>
+										<path
+											d="M3 2h2v7h-2V2zm5 0h2v7H8V2zm5 0h2v7h-2V2zm4 11h-2v-4h2v4zm-4 0h-2v-4h2v4zm-4 0h-2v-4h2v4zm8 2v-6h2v6h-2zM6 20h2v2H6v-2zm4 0h2v2h-2v-2z"
+										/>
+									</svg>
+								</a>
+							</div>
+						</div>
+						<div class="footer-grid">
+							<div class="footer-section">
+								<h4 class="footer-title">
+									Product
+								</h4>
+								<ul class="footer-links">
+									<li>
+										<a href="#">Features</a>
+									</li>
+									<li><a href="#">Pricing</a></li>
+									<li>
+										<a href="#">Security</a>
+									</li>
+									<li><a href="#">Roadmap</a></li>
+								</ul>
+							</div>
+							<div class="footer-section">
+								<h4 class="footer-title">
+									Community
+								</h4>
+								<ul class="footer-links">
+									<li><a href="#">Discord</a></li>
+									<li><a href="#">TikTok</a></li>
+									<li><a href="#">Twitch</a></li>
+									<li><a href="#">Reddit</a></li>
+								</ul>
+							</div>
+							<div class="footer-section">
+								<h4 class="footer-title">
+									Legal
+								</h4>
+								<ul class="footer-links">
+									<li>
+										<a href="#">Privacy Policy</a>
+									</li>
+									<li>
+										<a href="#"
+											>Terms of Service</a
+										>
+									</li>
+									<li>
+										<a href="#">Cookie Policy</a>
+									</li>
+									<li><a href="#">Contact</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="footer-divider"></div>
+					<div class="footer-bottom">
+						<p class="footer-copyright">
+							&copy; 2025 CoinQuest. All rights
+							reserved. Play. Save. Win.
+						</p>
+						<p class="footer-credits">
+							Designed & built with
+							<span class="heart">💚</span> for
+							gamers everywhere
 						</p>
 					</div>
-					<div class="footer-section">
-						<h4>Product</h4>
-						<ul>
-							<li><a href="#">Features</a></li>
-							<li><a href="#">Pricing</a></li>
-							<li><a href="#">Security</a></li>
-						</ul>
-					</div>
-					<div class="footer-section">
-						<h4>Community</h4>
-						<ul>
-							<li><a href="#">Discord</a></li>
-							<li><a href="#">TikTok</a></li>
-							<li><a href="#">Twitch</a></li>
-						</ul>
-					</div>
-					<div class="footer-section">
-						<h4>Legal</h4>
-						<ul>
-							<li><a href="#">Privacy</a></li>
-							<li><a href="#">Terms</a></li>
-							<li><a href="#">Contact</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="footer-bottom">
-					<p>
-						&copy; 2025 CoinQuest. All rights
-						reserved. Play. Save. Win.
-					</p>
 				</div>
 			</div>
 		</footer>
