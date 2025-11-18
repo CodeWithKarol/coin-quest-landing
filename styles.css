@@ -931,6 +931,7 @@ h6 {
 	animation: scrollFadeIn 1.4s
 		cubic-bezier(0.4, 0, 0.2, 1) forwards;
 }
+
 .community.scroll-fade-in.animate {
 	animation: scrollFadeIn 2.2s
 		cubic-bezier(0.4, 0, 0.2, 1) forwards !important;
