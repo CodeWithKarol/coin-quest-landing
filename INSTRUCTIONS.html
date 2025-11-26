@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoinQuest - Modification Instructions</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #0a0e27 0%, #050812 100%);
+            color: #ffffff;
+            line-height: 1.8;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: rgba(15, 20, 50, 0.8);
+            border: 1px solid rgba(0, 212, 255, 0.2);
+            border-radius: 12px;
+            padding: 3rem;
+            backdrop-filter: blur(20px);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+            border-bottom: 2px solid rgba(0, 212, 255, 0.3);
+            padding-bottom: 2rem;
+        }
+
+        h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 2.5rem;
+            background: linear-gradient(135deg, #00d4ff, #a100f2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 1rem;
+        }
+
+        .subtitle {
+            color: #a0aec0;
+            font-size: 1.1rem;
+        }
+
+        h2 {
+            font-family: 'Orbitron', sans-serif;
+            color: #00d4ff;
+            margin-top: 2.5rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid rgba(0, 212, 255, 0.2);
+        }
+
+        h3 {
+            color: #00ff88;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+
+        section {
+            margin-bottom: 2rem;
+        }
+
+        .instruction-group {
+            background: rgba(10, 14, 39, 0.5);
+            border-left: 4px solid #00d4ff;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-radius: 8px;
+        }
+
+        code {
+            background: rgba(0, 0, 0, 0.4);
+            padding: 0.3rem 0.6rem;
+            border-radius: 4px;
+            color: #00ff88;
+            font-family: 'Courier New', monospace;
+        }
+
+        pre {
+            background: rgba(0, 0, 0, 0.6);
+            border: 1px solid rgba(0, 212, 255, 0.2);
+            padding: 1rem;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 1rem 0;
+            color: #00ff88;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+        }
+
+        ul, ol {
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        li {
+            margin-bottom: 0.8rem;
+        }
+
+        strong {
+            color: #00d4ff;
+        }
+
+        .highlight {
+            background: rgba(0, 212, 255, 0.1);
+            padding: 0.2rem 0.6rem;
+            border-radius: 4px;
+            color: #00d4ff;
+        }
+
+        .warning {
+            background: rgba(255, 0, 110, 0.1);
+            border-left: 4px solid #ff006e;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 8px;
+        }
+
+        .tip {
+            background: rgba(0, 255, 136, 0.1);
+            border-left: 4px solid #00ff88;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 8px;
+        }
+
+        .file-structure {
+            background: rgba(0, 0, 0, 0.4);
+            padding: 1rem;
+            border-radius: 8px;
+            font-family: 'Courier New', monospace;
+            margin: 1rem 0;
+            color: #00ff88;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 1rem;
+            border-bottom: 1px solid rgba(0, 212, 255, 0.2);
+        }
+
+        th {
+            background: rgba(0, 212, 255, 0.1);
+            color: #00d4ff;
+            font-weight: 600;
+        }
+
+        tr:hover {
+            background: rgba(0, 212, 255, 0.05);
+        }
+
+        .nav-group {
+            background: rgba(0, 212, 255, 0.05);
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+        }
+
+        .step-number {
+            display: inline-block;
+            background: linear-gradient(135deg, #00d4ff, #a100f2);
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 28px;
+            margin-right: 0.5rem;
+            font-weight: bold;
+            color: #0a0e27;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎮 CoinQuest Landing Page</h1>
+            <p class="subtitle">Complete Modification & Customization Guide</p>
+            <p style="margin-top: 1rem; color: #a0aec0; font-size: 0.95rem;">Version 1.0 | Last Updated: November 26, 2025</p>
+        </header>
+
+        <!-- Quick Navigation -->
+        <section>
+            <h2>📍 Quick Navigation</h2>
+            <div class="nav-group">
+                <ul style="columns: 2;">
+                    <li><a href="#file-structure" style="color: #00d4ff; text-decoration: none;">File Structure</a></li>
+                    <li><a href="#color-customization" style="color: #00d4ff; text-decoration: none;">Color Customization</a></li>
+                    <li><a href="#content-modification" style="color: #00d4ff; text-decoration: none;">Content Modification</a></li>
+                    <li><a href="#navigation" style="color: #00d4ff; text-decoration: none;">Navigation Setup</a></li>
+                    <li><a href="#hero-section" style="color: #00d4ff; text-decoration: none;">Hero Section</a></li>
+                    <li><a href="#sections" style="color: #00d4ff; text-decoration: none;">Page Sections</a></li>
+                    <li><a href="#social-media" style="color: #00d4ff; text-decoration: none;">Social Media Links</a></li>
+                    <li><a href="#animations" style="color: #00d4ff; text-decoration: none;">Animations</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- File Structure -->
+        <section id="file-structure">
+            <h2>📁 File Structure</h2>
+            <p>Understanding the project structure is essential for making modifications:</p>
+            <div class="file-structure">
+coin-quest-landing/<br>
+├── index.html          # Main HTML file (edit content here)<br>
+├── styles.css          # All styling and animations<br>
+├── script.js           # JavaScript interactivity<br>
+├── favicon.svg         # Browser tab icon<br>
+├── README.md           # Project documentation<br>
+├── INSTRUCTIONS.html   # This file<br>
+└── LICENSE             # License information
+            </div>
+            <p style="color: #a0aec0; margin-top: 1rem;"><strong>Key Files to Edit:</strong></p>
+            <ul>
+                <li><strong>index.html</strong> - Edit content, text, and structure</li>
+                <li><strong>styles.css</strong> - Modify colors, fonts, and layout</li>
+                <li><strong>script.js</strong> - Add/modify JavaScript functionality</li>
+            </ul>
+        </section>
+
+        <!-- Color Customization -->
+        <section id="color-customization">
+            <h2>🎨 Color Customization</h2>
+            <p>All colors are defined as CSS variables in <code>styles.css</code> at the very top of the file. Modify these to change the entire site's color scheme:</p>
+            
+            <div class="instruction-group">
+                <h3>Default Color Palette</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Variable Name</th>
+                            <th>Default Value</th>
+                            <th>Usage</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>--primary</code></td>
+                            <td>#00d4ff (Cyan)</td>
+                            <td>Main accent color</td>
+                        </tr>
+                        <tr>
+                            <td><code>--secondary</code></td>
+                            <td>#ff006e (Pink)</td>
+                            <td>Secondary accent</td>
+                        </tr>
+                        <tr>
+                            <td><code>--accent</code></td>
+                            <td>#00ff88 (Green)</td>
+                            <td>Success/highlight color</td>
+                        </tr>
+                        <tr>
+                            <td><code>--accent-purple</code></td>
+                            <td>#a100f2 (Purple)</td>
+                            <td>Gradient color</td>
+                        </tr>
+                        <tr>
+                            <td><code>--dark-bg</code></td>
+                            <td>#0a0e27 (Dark)</td>
+                            <td>Main background</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="instruction-group">
+                <h3>How to Change Colors</h3>
+                <p><span class="step-number">1</span> Open <code>styles.css</code></p>
+                <p><span class="step-number">2</span> Find the <code>:root</code> section at the top</p>
+                <p><span class="step-number">3</span> Replace the hex color values with your new colors</p>
+                <p><span class="step-number">4</span> Save the file and refresh your browser</p>
+                
+                <pre>:root {
+    --primary: #00d4ff;        /* Change to your color */
+    --secondary: #ff006e;      /* Change to your color */
+    --accent: #00ff88;         /* Change to your color */
+    /* ... more colors ... */
+}</pre>
+            </div>
+
+            <div class="tip">
+                <strong>💡 Tip:</strong> Use a color picker tool like <a href="https://www.color-hex.com/" style="color: #00ff88; text-decoration: underline;">color-hex.com</a> to find perfect hex color values for your brand.
+            </div>
+        </section>
+
+        <!-- Content Modification -->
+        <section id="content-modification">
+            <h2>✏️ Content Modification</h2>
+            <p>All text content is stored in <code>index.html</code>. Here's how to modify different sections:</p>
+
+            <div class="instruction-group">
+                <h3>Changing the Page Title</h3>
+                <p>Located in the <code>&lt;head&gt;</code> section:</p>
+                <pre>&lt;title&gt;CoinQuest - Play. Save. Win.&lt;/title&gt;
+&lt;meta name="description" content="Your new description here"&gt;</pre>
+            </div>
+
+            <div class="instruction-group">
+                <h3>Modifying Main Headings</h3>
+                <p>Search for text in <code>index.html</code> to find and edit section titles:</p>
+                <pre>&lt;h1 class="hero-title"&gt;Your New Title Here&lt;/h1&gt;
+&lt;p class="hero-subtitle"&gt;Your subtitle text&lt;/p&gt;</pre>
+            </div>
+
+            <div class="instruction-group">
+                <h3>Editing Section Content</h3>
+                <ul>
+                    <li>Find the section by searching for its name (e.g., "Features", "Community")</li>
+                    <li>Locate the text content within that section</li>
+                    <li>Edit the text directly</li>
+                    <li>Maintain the HTML structure (don't remove tags)</li>
+                </ul>
+            </div>
+
+            <div class="warning">
+                <strong>⚠️ Warning:</strong> Be careful not to accidentally delete HTML tags like <code>&lt;div&gt;</code>, <code>&lt;span&gt;</code>, or <code>&lt;class&gt;</code> attributes, as this will break the styling.
+            </div>
+        </section>
+
+        <!-- Navigation Setup -->
+        <section id="navigation">
+            <h2>🧭 Navigation Setup</h2>
+            
+            <div class="instruction-group">
+                <h3>Adding New Navigation Links</h3>
+                <p>Edit the <code>&lt;ul class="nav-links"&gt;</code> section in the navbar:</p>
+                <pre>&lt;ul class="nav-links"&gt;
+    &lt;li&gt;
+        &lt;a href="#features" class="nav-link"&gt;Features&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;!-- Add new links here --&gt;
+    &lt;li&gt;
+        &lt;a href="#your-section" class="nav-link"&gt;Your Link&lt;/a&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;</pre>
+            </div>
+
+            <div class="instruction-group">
+                <h3>Modifying the Logo</h3>
+                <p>Change the logo icon or text:</p>
+                <pre>&lt;a href="#" class="nav-brand" id="navBrand"&gt;
+    &lt;span class="logo-icon"&gt;🎮&lt;/span&gt;  &lt;!-- Change emoji --&gt;
+    &lt;span class="logo-text"&gt;CoinQuest&lt;/span&gt;  &lt;!-- Change text --&gt;
+&lt;/a&gt;</pre>
+                <p style="color: #a0aec0; margin-top: 1rem;"><strong>Note:</strong> Clicking the logo automatically scrolls to the top. This is controlled by JavaScript in <code>script.js</code>.</p>
+            </div>
+
+            <div class="instruction-group">
+                <h3>Mobile Menu Links</h3>
+                <p>Update mobile menu items in the <code>&lt;div class="mobile-menu"&gt;</code> section:</p>
+                <pre>&lt;ul class="mobile-nav-links"&gt;
+    &lt;li&gt;&lt;a href="#features" class="nav-link"&gt;Features&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#your-link" class="nav-link"&gt;Your Link&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</pre>
+            </div>
+        </section>
+
+        <!-- Hero Section -->
+        <section id="hero-section">
+            <h2>🎯 Hero Section Customization</h2>
+            
+            <div class="instruction-group">
+                <h3>Changing Hero Title & Subtitle</h3>
+                <pre>&lt;h1 class="hero-title"&gt;
+    Your Main Title
+&lt;/h1&gt;
+&lt;p class="hero-subtitle"&gt;
+    Your subtitle text goes here
+&lt;/p&gt;</pre>
+            </div>
+
+            <div class="instruction-group">
+                <h3>Modifying Call-to-Action Buttons</h3>
+                <p>Find the <code>&lt;div class="hero-cta"&gt;</code> section:</p>
+                <pre>&lt;button class="btn btn-primary btn-lg"&gt;Your CTA Text&lt;/button&gt;
+&lt;button class="btn btn-secondary btn-lg"&gt;Secondary CTA&lt;/button&gt;</pre>
+            </div>
+
+            <div class="instruction-group">
+                <h3>Updating Statistics</h3>
+                <p>Modify hero stats in the stats display area:</p>
+                <pre>&lt;div class="stat-item"&gt;
+    &lt;span class="stat-number"&gt;500K&lt;/span&gt;
+    &lt;span class="stat-label"&gt;Active Players&lt;/span&gt;
+&lt;/div&gt;</pre>
+            </div>
+
+            <div class="tip">
+                <strong>💡 Tip:</strong> The hero section has gradient orb animations. These are CSS animations that run automatically - no modification needed unless you want to change colors.
+            </div>
+        </section>
+
+        <!-- Page Sections -->
+        <section id="sections">
+            <h2>📑 Modifying Page Sections</h2>
+            
+            <div class="instruction-group">
+                <h3>Features Section</h3>
+                <p>Each feature is a card. To modify:</p>
+                <ol>
+                    <li>Find <code>&lt;div class="feature-card"&gt;</code></li>
+                    <li>Change the emoji in <code>&lt;div class="feature-icon"&gt;</code></li>
+                    <li>Edit title in <code>&lt;h3 class="feature-title"&gt;</code></li>
+                    <li>Update description in <code>&lt;p class="feature-description"&gt;</code></li>
+                </ol>
+                <pre>&lt;div class="feature-icon"&gt;🎮&lt;/div&gt;
+&lt;h3 class="feature-title"&gt;Your Feature Title&lt;/h3&gt;
+&lt;p class="feature-description"&gt;Feature description&lt;/p&gt;</pre>
+            </div>
+
+            <div class="instruction-group">
+                <h3>Leaderboard Section</h3>
+                <p>Update player names and stats:</p>
+                <pre>&lt;div class="player-name"&gt;Player Name&lt;/div&gt;
+&lt;div class="stat-item"&gt;
+    &lt;span class="stat-label"&gt;Wins&lt;/span&gt;
+    &lt;span class="stat-value"&gt;150&lt;/span&gt;
+&lt;/div&gt;</pre>
+            </div>
+
+            <div class="instruction-group">
+                <h3>Community Section</h3>
+                <p>Modify community cards and testimonials:</p>
+                <pre>&lt;h3 class="community-card-title"&gt;Community Title&lt;/h3&gt;
+&lt;p class="community-card-description"&gt;Description&lt;/p&gt;</pre>
+            </div>
+
+            <div class="instruction-group">
+                <h3>Footer Section</h3>
+                <p>Update footer links and information:</p>
+                <ul>
+                    <li>Copyright text in <code>.footer-copyright</code></li>
+                    <li>Footer links in <code>.footer-links</code></li>
+                    <li>Social links in <code>.footer-socials</code></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Social Media Links -->
+        <section id="social-media">
+            <h2>📱 Social Media Links</h2>
+            
+            <div class="instruction-group">
+                <h3>Updating Social Media URLs</h3>
+                <p>Find the social links section and update the <code>href</code> attributes:</p>
+                <pre>&lt;a href="https://discord.com/invite/your-server" class="social-link" title="Discord"&gt;
+    &lt;!-- SVG icon --&gt;
+&lt;/a&gt;</pre>
+            </div>
+
+            <div class="instruction-group">
+                <h3>Adding/Removing Social Links</h3>
+                <p>Current social links include: Discord, X, Instagram, and YouTube</p>
+                <p>To change a social link:</p>
+                <ol>
+                    <li>Locate the social link in the footer</li>
+                    <li>Update the <code>href</code> with your URL</li>
+                    <li>Update the <code>title</code> attribute</li>
+                </ol>
+            </div>
+
+            <div class="instruction-group">
+                <h3>Footer Social Links</h3>
+                <p>Located in the <code>&lt;div class="footer-socials"&gt;</code> section:</p>
+                <pre>&lt;div class="footer-socials"&gt;
+    &lt;a href="https://your-url" class="social-link" title="Platform Name"&gt;
+        &lt;svg&gt;&lt;!-- Icon here --&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/div&gt;</pre>
+            </div>
+
+            <div class="tip">
+                <strong>💡 Tip:</strong> Keep social link icons as SVG for best quality and performance. SVG icons scale perfectly on any device size.
+            </div>
+        </section>
+
+        <!-- Animations -->
+        <section id="animations">
+            <h2>✨ Animation Customization</h2>
+            
+            <div class="instruction-group">
+                <h3>Animation Speed</h3>
+                <p>Animations are controlled by CSS transitions. To make things slower or faster:</p>
+                <pre>/* Find this in styles.css and adjust the time value */
+transition: all 0.3s ease;  /* 0.3 seconds - change this number */</pre>
+                <p style="color: #a0aec0; margin-top: 1rem;"><strong>Common values:</strong> 0.1s (very fast), 0.3s (fast), 0.6s (medium), 1s (slow)</p>
+            </div>
+
+            <div class="instruction-group">
+                <h3>Easing Functions</h3>
+                <p>Control how animations feel:</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Easing Type</th>
+                            <th>Effect</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>ease</code></td>
+                            <td>Smooth default easing</td>
+                        </tr>
+                        <tr>
+                            <td><code>ease-in</code></td>
+                            <td>Slow start, fast end</td>
+                        </tr>
+                        <tr>
+                            <td><code>ease-out</code></td>
+                            <td>Fast start, slow end</td>
+                        </tr>
+                        <tr>
+                            <td><code>linear</code></td>
+                            <td>Constant speed</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="instruction-group">
+                <h3>Disabling Animations</h3>
+                <p>To remove animations, set the transition to 0s:</p>
+                <pre>transition: all 0s ease;  /* Animations disabled */</pre>
+            </div>
+
+            <div class="warning">
+                <strong>⚠️ Note:</strong> Scroll-triggered animations use JavaScript. To modify these, edit the <code>script.js</code> file and look for the <code>IntersectionObserver</code> section.
+            </div>
+        </section>
+
+        <!-- Additional Customizations -->
+        <section>
+            <h2>🛠️ Additional Customizations</h2>
+            
+            <div class="instruction-group">
+                <h3>Changing Fonts</h3>
+                <p>Fonts are imported from Google Fonts in the <code>&lt;head&gt;</code>:</p>
+                <pre>&lt;link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet"&gt;</pre>
+                <p style="color: #a0aec0; margin-top: 1rem;">Visit <a href="https://fonts.google.com/" style="color: #00ff88; text-decoration: underline;">Google Fonts</a> to choose different fonts and update the URL.</p>
+            </div>
+
+            <div class="instruction-group">
+                <h3>Modifying Favicon</h3>
+                <p>Replace <code>favicon.svg</code> with your own SVG file:</p>
+                <pre>&lt;link rel="icon" href="favicon.svg" type="image/svg+xml"&gt;</pre>
+                <p style="color: #a0aec0; margin-top: 1rem;">Keep it as SVG for best quality and scalability.</p>
+            </div>
+
+            <div class="instruction-group">
+                <h3>Container Width</h3>
+                <p>Adjust the max-width of the page content in <code>styles.css</code>:</p>
+                <pre">.container {
+    max-width: 1200px;  /* Change this value */
+    margin: 0 auto;
+    padding: 0 20px;
+}</pre>
+            </div>
+
+            <div class="instruction-group">
+                <h3>Responsive Breakpoints</h3>
+                <p>The page has responsive design for different screen sizes. Media queries are at the bottom of <code>styles.css</code>:</p>
+                <ul>
+                    <li><code>@media (max-width: 1024px)</code> - Tablets</li>
+                    <li><code>@media (max-width: 768px)</code> - Small tablets/large phones</li>
+                    <li><code>@media (max-width: 480px)</code> - Small phones</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Best Practices -->
+        <section>
+            <h2>✅ Best Practices</h2>
+            
+            <div class="instruction-group">
+                <h3>Before Making Changes</h3>
+                <ol>
+                    <li><strong>Backup your files</strong> - Create a copy before making edits</li>
+                    <li><strong>Edit one thing at a time</strong> - Makes debugging easier</li>
+                    <li><strong>Test in browser</strong> - Refresh (Ctrl+F5) to see changes</li>
+                    <li><strong>Check mobile view</strong> - Responsive design is important</li>
+                </ol>
+            </div>
+
+            <div class="instruction-group">
+                <h3>Common Mistakes to Avoid</h3>
+                <ul>
+                    <li>❌ Deleting HTML tags accidentally</li>
+                    <li>❌ Not closing tags properly</li>
+                    <li>❌ Modifying class names (breaks styling)</li>
+                    <li>❌ Using non-web-safe colors</li>
+                    <li>❌ Not testing on mobile devices</li>
+                </ul>
+            </div>
+
+            <div class="tip">
+                <strong>💡 Pro Tip:</strong> Use browser DevTools (F12 or Right-click > Inspect) to see which CSS classes apply to elements. This helps identify what to modify.
+            </div>
+        </section>
+
+        <!-- Support & Resources -->
+        <section>
+            <h2>📚 Resources & Support</h2>
+            
+            <div class="instruction-group">
+                <h3>Learning Resources</h3>
+                <ul>
+                    <li><strong>HTML/CSS Basics:</strong> <a href="https://www.w3schools.com/" style="color: #00ff88; text-decoration: underline;">W3Schools</a></li>
+                    <li><strong>Color Tools:</strong> <a href="https://www.color-hex.com/" style="color: #00ff88; text-decoration: underline;">Color Hex</a></li>
+                    <li><strong>Fonts:</strong> <a href="https://fonts.google.com/" style="color: #00ff88; text-decoration: underline;">Google Fonts</a></li>
+                    <li><strong>Icons & Emojis:</strong> <a href="https://www.unicode.org/emoji/" style="color: #00ff88; text-decoration: underline;">Unicode Emoji</a></li>
+                </ul>
+            </div>
+
+            <div class="instruction-group">
+                <h3>Code Editors Recommended</h3>
+                <ul>
+                    <li><strong>Visual Studio Code</strong> (Free, recommended)</li>
+                    <li><strong>Sublime Text</strong></li>
+                    <li><strong>Atom</strong></li>
+                    <li><strong>Online:</strong> <a href="https://codepen.io/" style="color: #00ff88; text-decoration: underline;">CodePen</a>, <a href="https://www.replit.com/" style="color: #00ff88; text-decoration: underline;">Replit</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Quick Reference -->
+        <section>
+            <h2>📖 Quick Reference</h2>
+            
+            <div class="instruction-group">
+                <h3>Common CSS Properties to Edit</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Property</th>
+                            <th>Example</th>
+                            <th>What It Does</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>color</code></td>
+                            <td><code>color: #00d4ff;</code></td>
+                            <td>Text color</td>
+                        </tr>
+                        <tr>
+                            <td><code>background</code></td>
+                            <td><code>background: #0a0e27;</code></td>
+                            <td>Background color</td>
+                        </tr>
+                        <tr>
+                            <td><code>font-size</code></td>
+                            <td><code>font-size: 1.5rem;</code></td>
+                            <td>Text size</td>
+                        </tr>
+                        <tr>
+                            <td><code>padding</code></td>
+                            <td><code>padding: 1rem;</code></td>
+                            <td>Inner spacing</td>
+                        </tr>
+                        <tr>
+                            <td><code>margin</code></td>
+                            <td><code>margin: 1rem;</code></td>
+                            <td>Outer spacing</td>
+                        </tr>
+                        <tr>
+                            <td><code>border-radius</code></td>
+                            <td><code>border-radius: 8px;</code></td>
+                            <td>Corner roundness</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <section style="text-align: center; border-top: 1px solid rgba(0, 212, 255, 0.2); padding-top: 2rem; margin-top: 3rem;">
+            <p style="color: #a0aec0;">
+                <strong>CoinQuest Landing Page Customization Guide</strong><br>
+                Play. Save. Win. 🎮💰🏆
+            </p>
+            <p style="color: #a0aec0; font-size: 0.9rem; margin-top: 1rem;">
+                For more information, check the README.md file or visit the project repository.
+            </p>
+        </section>
+    </div>
+</body>
+</html>

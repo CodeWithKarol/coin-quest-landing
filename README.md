@@ -4,12 +4,15 @@
 
 ## 🎮 Project Status
 
-✅ **Merge Conflicts Resolved** - All conflicts successfully resolved with:
+✅ **Latest Updates** - Recent improvements and enhancements include:
 
-- Unified professional animation system using spring-like easing curves
-- Enhanced footer social icons with elegant SVG styling and shine effects
-- Consistent scroll-triggered animations across all page sections
-- Clean, error-free codebase ready for production
+- Centered footer content on mobile resolution for improved mobile UX
+- Updated social media icons with official branding (X, Instagram, YouTube)
+- Added SVG favicon for better browser tab visibility
+- Interactive logo that smoothly scrolls page to top when clicked
+- Comprehensive HTML modification guide included
+- Enhanced responsive design with optimized mobile layouts
+- Clean, production-ready codebase with unified animation system
 
 ## Campaign Overview: "Play. Save. Win."
 
@@ -36,6 +39,8 @@ coin-quest-landing/
 ├── index.html          # Main landing page
 ├── styles.css          # Modern, gamification-focused styling
 ├── script.js           # Interactivity and animations
+├── favicon.svg         # SVG favicon for browser tab
+├── INSTRUCTIONS.html   # Detailed modification guide
 ├── README.md           # This file
 └── LICENSE             # Apache 2.0 License
 ```
@@ -62,7 +67,7 @@ coin-quest-landing/
 - Global leaderboards with real-time rankings
 - Social challenges and tournaments
 - Live stats showing community progress
-- Integration with Discord, TikTok, Twitch, and Instagram
+- Integration with Discord, X (Twitter), Instagram, and YouTube
 
 ### 🎨 Modern Design
 
@@ -95,14 +100,14 @@ coin-quest-landing/
 
 ### Key Sections
 
-1. **Navigation Bar**: Fixed, responsive navbar with smooth scroll links and mobile menu
+1. **Navigation Bar**: Fixed, responsive navbar with smooth scroll links, mobile menu, and clickable logo that scrolls to top
 2. **Hero Section**: Eye-catching headline with gradient orbs, CTA buttons, and gamified progress demo
 3. **Stats Section**: Live metrics showing community impact with scroll-triggered animations
-4. **Features**: Six core features with glassmorphism cards and hover effects (no individual card animations)
+4. **Features**: Six core features with glassmorphism cards and hover effects
 5. **Leaderboard**: Interactive rankings with top players and their achievements
 6. **Community**: Social channels with professional SVG icons and community testimonials
 7. **Contact/CTA**: Multi-channel contact methods with elegant card layouts
-8. **Footer**: Enhanced social links with gradient backgrounds, shine effects, and smooth transitions
+8. **Footer**: Centered content on mobile with social links (Discord, X, Instagram, YouTube), gradient backgrounds, and smooth transitions
 
 ---
 
@@ -158,14 +163,32 @@ Then navigate to `http://localhost:8000` in your browser.
 
 ---
 
+## 📖 Customization Guide
+
+For detailed instructions on how to modify, customize, and personalize this landing page, please refer to **[INSTRUCTIONS.html](./INSTRUCTIONS.html)**
+
+The guide covers:
+
+- Color customization and branding
+- Content modification (text, headings, descriptions)
+- Navigation setup and logo changes
+- Social media link updates
+- Animation and transition adjustments
+- Responsive design modifications
+- Best practices and common mistakes to avoid
+
+Simply open `INSTRUCTIONS.html` in your browser to get started with customizing the template.
+
+---
+
 ## Marketing Channels
 
 The landing page supports integration with:
 
-- **TikTok**: Viral challenges and user success stories
-- **Twitch**: Live streams discussing finance hacks
-- **Discord**: Community engagement and real-time chat (50K+ members)
 - **Instagram**: Interactive Stories polls and influencer content
+- **X (Twitter)**: Real-time updates and community engagement
+- **YouTube**: Video tutorials and success stories
+- **Discord**: Community engagement and real-time chat (50K+ members)
 - **Influencer Tournaments**: Exclusive competitions with top creators
 
 ---
@@ -258,8 +281,9 @@ This project is licensed under the Apache License 2.0 - see the [LICENSE](./LICE
 
 - **Email**: support@coinquest.io
 - **Discord**: [Join our community]
-- **Twitter/X**: [@CoinQuest](https://twitter.com/coinquest)
+- **X (Twitter)**: [@CoinQuest](https://twitter.com/coinquest)
 - **Instagram**: [@CoinQuestApp](https://instagram.com/coinquestapp)
+- **YouTube**: [Subscribe to CoinQuest](https://youtube.com/coinquest)
 
 ---
 

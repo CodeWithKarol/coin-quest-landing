@@ -20,6 +20,13 @@ function scrollToFeatures() {
 	scrollToSection("features");
 }
 
+function scrollToTop() {
+	window.scrollTo({
+		top: 0,
+		behavior: "smooth",
+	});
+}
+
 // ============================================
 // MOBILE MENU TOGGLE
 // ============================================
@@ -27,6 +34,8 @@ function scrollToFeatures() {
 document.addEventListener(
 	"DOMContentLoaded",
 	function () {
+		const navBrand =
+			document.getElementById("navBrand");
 		const mobileMenuToggle =
 			document.getElementById("mobileMenuToggle");
 		const mobileMenu =
@@ -35,6 +44,17 @@ document.addEventListener(
 			document.querySelectorAll(
 				".mobile-nav-links a"
 			);
+
+		// Scroll to top when nav-brand is clicked
+		if (navBrand) {
+			navBrand.addEventListener(
+				"click",
+				function (e) {
+					e.preventDefault();
+					scrollToTop();
+				}
+			);
+		}
 
 		// Toggle mobile menu
 		mobileMenuToggle.addEventListener(
